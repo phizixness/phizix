@@ -461,9 +461,9 @@ text-align: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-/*   backdrop-filter: blur(1px); */
-  background-color: rgba(0, 0, 0, 0.10); /* Transparent background initially */
-/*   -webkit-backdrop-filter: blur(1px);  */
+  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.50); /* Transparent background initially */
+  -webkit-backdrop-filter: blur(1px); 
   position: fixed;
   width: 100%;
   height: 100%;
