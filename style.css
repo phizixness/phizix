@@ -44,7 +44,10 @@ h6 {
   font-weight: 500;
   line-height: 1.3; }
 
-  
+  h5:hover {
+ 
+
+text-decoration: underline;}
 
 p {
   color: #838383;
@@ -473,6 +476,7 @@ text-align: center;
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
     list-style: none;
+    
     background-color: #ebebeb;
     border-radius: 0.25rem;
   }
@@ -544,6 +548,7 @@ text-align: center;
 @media (min-width: 768px) {
 	.breadcrumbs-path {
 		padding: 30px 0;
+    
 	}
 }
 
@@ -584,6 +589,7 @@ text-align: center;
 
 .breadcrumbs-modern {
 	text-align: left;
+  
 }
 
 .breadcrumbs-modern-body {
@@ -618,6 +624,7 @@ text-align: center;
 	.breadcrumbs-modern-body {
 		padding-top: 80px;
     padding-bottom: 150px;
+    
 	}
 }
 
@@ -640,6 +647,7 @@ text-align: center;
 	.breadcrumbs-modern-body {
 		padding-top: 120px;
 		padding-bottom: 150px;
+    
 	}
 }
 
@@ -658,12 +666,14 @@ text-align: center;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
+  
 }
 
 .box-transform {
 	position: absolute;
 	right: 0;
 	top: 0;
+  
 	width: calc(100% + 150px);
 	height: calc(100% + 150px);
 	will-change: transform;
@@ -918,7 +928,8 @@ img {
 .bg-img {
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+ }
 
 .bg-transparent {
   background-color: transparent; }
@@ -1175,7 +1186,7 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
   background-color: rgba(0, 0, 0, 0.486); /* Transparent background initially */
   -webkit-backdrop-filter: blur(10px); /* For Safari */ }
 
-  .dropdown-menu:hover {
+  .dropdown-item:hover {
     text-decoration: #5e4900;
 
   }
@@ -1300,7 +1311,7 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
 .single-blog-post {
   position: relative;
   z-index: 1;
-  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.030);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.060);
   border-radius: 10px;
   margin-bottom: 5px; }
   .single-blog-post .post-thumbnail {
@@ -1571,7 +1582,7 @@ background-color: rgba(0, 0, 0, 0.267); /* Transparent background initially */
       width: 36px;
       height: 36px;
       border: 1px solid;
-      border-color: #161616;
+      border-color: #222222;
       display: block;
       border-radius: 50%;
       text-align: center;
