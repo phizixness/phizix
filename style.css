@@ -462,9 +462,9 @@ text-align: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  backdrop-filter: blur(3px); /* Apply blur effect */
-  background-color: rgba(0, 0, 0, 0.60); /* Transparent background initially */
-  -webkit-backdrop-filter: blur(3px); /* For Safari */
+  backdrop-filter: blur(1px); /* Apply blur effect */
+  background-color: rgba(0, 0, 0, 0.40); /* Transparent background initially */
+  -webkit-backdrop-filter: blur(1px); /* For Safari */
   position: fixed;
   width: 100%;
   height: 100%;
