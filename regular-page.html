@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/collection/components/icon/icon.min.css">
 
     <!-- Title  -->
     <title>World - Blog &amp; Magazine Template</title>
@@ -61,7 +62,7 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Astronomy</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="astronomy.html"><b>Astronomy</b></a>
-                                        <a class="dropdown-item" href="ns.html"><b>Night Sky</b></a>
+                                        <a class="dropdown-item" href="ns.html"><b>In the Sky</b></a>
                                         <a class="dropdown-item" href="ap.html"><b>Astrophotography</b></a>
                                     </div>
                                 </li>
@@ -155,7 +156,50 @@
 
 
                             <h6>Donec orci dolor, pretium in luctus id, consequat vitae nibh. Quisque hendrerit, lorem sit amet mollis malesuada, urna orci volutpat ex, sed scelerisque nunc velit et massa. Sed maximus id erat vel feugiat. Phasellus bibendum nisi non urna bibendum elementum. Aenean tincidunt nibh vitae ex facilisis ultrices. Integer ornare efficitur ultrices. Integer neque lectus, venenatis at pulvinar quis, aliquet id neque. Mauris ultrices consequat velit, sed dignissim elit posuere in. Cras vitae dictum dui.</h6>
-                            
+                            <footer>
+                                <div class="col">
+                                    <ul class="tags">
+                                        <li><a href="#">Free Themes</a></li>
+                                        <li><a href="#">Bootstrap 3</a></li>
+                                        <li><a href="#">Responsive Web Design</a></li>
+                                        <li><a href="#">HTML5</a></li>
+                                        <li><a href="#">CSS3</a></li>
+                                        <li><a href="#">Web Design</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <a href="#" class="love"><i class="ion-android-favorite-outline"></i> <div>1220</div></a>
+                                </div>
+                            </footer> 
+
+                            <script>
+                                document.addEventListener('DOMContentLoaded', (event) => {
+                                  const likeButton = document.querySelector('.love');
+                                  const likeCountDiv = likeButton.querySelector('div');
+                                  
+                                  likeButton.addEventListener('click', (event) => {
+                                    event.preventDefault(); // Prevent the default link behavior
+                              
+                                    // Temporarily increment the like count
+                                    let currentCount = parseInt(likeCountDiv.innerText);
+                                    likeCountDiv.innerText = currentCount + 1;
+                              
+                                    // Optional: Animate the button (e.g., scale effect)
+                                    likeButton.style.transform = 'scale(1.1)';
+                                    setTimeout(() => {
+                                      likeButton.style.transform = 'scale(1)';
+                                    }, 100);
+                              
+                                    // Optionally, you can use local storage to simulate persistent likes
+                                    // For the demo, just set a short delay to reset the button text
+                                    setTimeout(() => {
+                                      likeCountDiv.innerText = currentCount;
+                                    }, 1000);
+                                  });
+                                });
+                              </script>
+                              
+
                             <!-- Post Meta -->
                             <div class="post-meta second-part">
                                 <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
